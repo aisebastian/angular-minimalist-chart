@@ -1,0 +1,3 @@
+<div class="wrapper" *ngIf="bars && bars.length">
+    <div class="bar {{bar.cssClass}}" *ngFor="let bar of bars" [ngStyle]="{'width': (100/bars.length)+'%', 'height': ((1.0 * bar.value / maxValue) * 100)+'%'}"></div>
+</div>
